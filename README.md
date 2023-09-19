@@ -12,6 +12,7 @@ Goal: The goal is to create a highly efficient order book model simulating the m
 - microseconds (µs) vs nanoseconds (ns)
 - a lot can go wrong in a few microseconds
 - placement `new` can be slightly inefficient (will perform a null pointer check on memory passed in)
+- What about partial order executions where an order can be filled by multiple orders?
 
 -----
 # Design and Data Structure 
