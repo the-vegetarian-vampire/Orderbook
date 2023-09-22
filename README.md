@@ -49,3 +49,8 @@ Goal: The goal is to create a highly efficient order book model simulating the m
 
 - [What is Low Latency C++ Timur Doumler](https://www.youtube.com/watch?v=jjDolw1PIsM)
 - [When a Microsecond Is an Eternity: High Performance Trading Systems in C++](https://www.youtube.com/watch?v=NH1Tta7purM&t=1562s)
+- [Trading at light speed: designing low latency systems in C++ - David Gross - Meeting C++ 2022](https://www.youtube.com/watch?v=8uAW5FQtcvE&t=377s) 
+
+### Samples
+- [Coding an Orderbook // Algo Trading Platform](https://www.youtube.com/watch?v=NSlnLhPONDc)
+- [Orderbook Aggregator - WebSockets With Golang And NextJS](https://www.youtube.com/watch?v=RNCNa5lPSf4&list=PL8nBmR5eGh34AynaXik3rgiW3qK6FKXVq)
