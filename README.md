@@ -2,7 +2,7 @@
 
 A low latency C++ order book.
 
-Goal: The goal is to create a highly efficient order book model simulating the matching of buy and sell orders. 
+Goal: To create a highly efficient order book model simulating the matching of buy and sell orders. 
 - Throughout vs latency: what are we optimizing for and why? There will be trade-offs.
 - Cache friendly binary search
 - Instruction cache — call code, a dummy run, so it stays hot in the instruction cache (ready to be called)
@@ -16,8 +16,14 @@ Goal: The goal is to create a highly efficient order book model simulating the m
 
 -----
 # Design and Data Structure 
+- ID, timestamp, price, quantity, and type.
+- two sides - bids (buy orders) and asks (sell orders). Each side implemented as a priority queue (or a balanced binary search tree like a red-black tree). The bid side sorted in descending order by price, ask side in ascending order.
 - heaps, trees
-- Is concurrency necessary?
+- Is concurrency necessary? How order book will handle multiple orders arriving nearly simultaneously?
+-  "Market Data Feed Handler" for ingesting and parsing real-time market data?
+-  `std::chrono` library for high precision timing?
+
+### Matching Engine
 
 -----
 # Order Class
@@ -43,6 +49,9 @@ Goal: The goal is to create a highly efficient order book model simulating the m
 
 -----
 #  Edge Cases and Error Handling
+- What if two orders have the exact same timestamp?
+- What happens when the system receives an order that would cause it to exceed its risk parameters?
+- Handling market halts or pauses.
 
 -----
 # Resources  
