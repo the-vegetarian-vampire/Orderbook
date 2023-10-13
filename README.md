@@ -63,4 +63,5 @@ Goal: To create a highly efficient order book model simulating the matching of b
 ### Samples
 - [Coding an Orderbook // Algo Trading Platform](https://www.youtube.com/watch?v=NSlnLhPONDc)
 - [Orderbook Aggregator - WebSockets With Golang And NextJS](https://www.youtube.com/watch?v=RNCNa5lPSf4&list=PL8nBmR5eGh34AynaXik3rgiW3qK6FKXVq)
-- [Stock Exchange System Design : Distributed Transactions, Financial System]( https://youtu.be/XuKs2kWH0mQ?si=spgq46EXJj2T8wPP)   
+- [Stock Exchange System Design : Distributed Transactions, Financial System]( https://youtu.be/XuKs2kWH0mQ?si=spgq46EXJj2T8wPP)
+- [Low Latency Stock Exchange Design Deep Dive](https://www.youtube.com/watch?v=erusCJu6CQY)    
